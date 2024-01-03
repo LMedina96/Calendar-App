@@ -20,4 +20,4 @@ Asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu máquina ante
 1. Clona este repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/calendario-react-redux.git
+   git clone https://github.com/LMedina96/Calendar-App.git
