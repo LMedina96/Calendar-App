@@ -33,7 +33,7 @@ const CalendarModal = () => {
 
     const [formSubmitted, setFormSubmitted] = useState(false)
 
-    const [formValues, setformValues] = useState({
+    const [formValues, setFormValues] = useState({
         title: '',
         notes: '',
         start: new Date(),
@@ -51,19 +51,19 @@ const CalendarModal = () => {
 
     useEffect(() => {
         if (activeEvent !== null) {
-            setformValues({...activeEvent})
+            setFormValues({...activeEvent})
         }
     }, [activeEvent])
 
     const onDateChange = (event, changing) => {
-        setformValues({
+        setFormValues({
             ...formValues,
             [changing]: event
         })
     }
 
     const onInputChange = ({ target }) => {
-        setformValues({
+        setFormValues({
             ...formValues,
             [target.name]: target.value
         })
